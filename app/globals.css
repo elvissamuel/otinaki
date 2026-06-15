@@ -1,26 +1,128 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --otinaki-navy: #002049;
+  --otinaki-gold: #e7c667;
+  --otinaki-white: #ffffff;
+  --otinaki-cream: #f8f7f4;
+  --text-muted: #3a4f6b;
+  --text-muted-on-dark: rgba(255, 255, 255, 0.82);
+  --background: var(--otinaki-white);
+  --foreground: var(--otinaki-navy);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy: var(--otinaki-navy);
+  --color-gold: var(--otinaki-gold);
+  --color-cream: var(--otinaki-cream);
+  --font-sans: var(--font-jakarta);
+  --font-display: var(--font-jakarta);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--otinaki-gold);
+  color: var(--otinaki-navy);
+}
+
+.font-display {
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+}
+
+.section-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--otinaki-gold);
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--otinaki-navy);
+}
+
+.section-title-light {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--otinaki-white);
+}
+
+.body-text {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.body-text-light {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--text-muted-on-dark);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+}
+
+.animate-ken-burns {
+  animation: ken-burns 12s ease-out forwards;
+}
+
+.clip-diagonal {
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 1023px) {
+  .clip-diagonal {
+    clip-path: none;
+  }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
