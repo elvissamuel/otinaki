@@ -1,147 +1,159 @@
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "What We Do", href: "#services" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export const heroSlides = [
   {
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80",
-    title: "OTINAKI",
-    subtitle: "Innovation & Excellence",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80",
+    subtitle: "Construction · Energy · Real Estate · Agriculture · Mobility",
     description:
-      "We deliver transformative solutions that shape industries and empower communities through vision, integrity, and relentless pursuit of quality.",
+      "Delivering precision and excellence across construction, energy, agriculture, real estate and mobility to drive global progress.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80",
-    title: "OTINAKI",
-    subtitle: "Building Tomorrow",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80",
+    subtitle: "Real Estate & Hospitality",
     description:
-      "From landmark developments to sustainable infrastructure, we create spaces and systems that stand the test of time.",
+      "High-yield property assets and premium hotel management, backed by institutional-grade construction standards.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80",
-    title: "OTINAKI",
-    subtitle: "Sustainable Energy",
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80",
+    subtitle: "Next-Generation Energy",
     description:
-      "Powering progress with clean energy solutions that balance economic growth with environmental responsibility.",
+      "Solar and electrical engineering solutions that transition communities toward grid-independent, sustainable power.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1574943329849-82517e3f79c?w=1920&q=80",
-    title: "OTINAKI",
-    subtitle: "Agro & Development",
+    image: "https://images.unsplash.com/photo-1574943329849-82517e3f79c?w=1920&q=80",
+    subtitle: "Agriculture & Food Security",
     description:
-      "Revolutionizing agriculture and rural development through sustainable practices and cutting-edge technology.",
+      "Industrial-scale agrarian operations, livestock rearing, and aquaculture delivering reliable supply chains.",
   },
 ];
 
 export const aboutAccordion = [
   {
     id: "mission",
-    number: "1",
     title: "Our Mission",
     content:
-      "To deliver exceptional value across every project we undertake — combining innovation, expertise, and unwavering commitment to our clients and communities.",
+      "Delivering precision and excellence across construction, energy, agriculture, real estate and mobility to drive progress.",
   },
   {
     id: "vision",
-    number: "2",
     title: "Our Vision",
     content:
-      "To be the most trusted partner in development and enterprise, recognized globally for integrity, impact, and excellence in everything we do.",
+      "To be the benchmark for excellence, securing an unassailable advantage for our clients in every sector we serve.",
   },
   {
     id: "values",
-    number: "3",
     title: "Our Values",
     content:
-      "Integrity, innovation, sustainability, and collaboration form the foundation of our culture — guiding every decision and relationship we build.",
-  },
-];
-
-export const projects = [
-  {
-    title: "Skyline Tower",
-    category: "Real Estate",
-    image:
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
-    description:
-      "A 32-story mixed-use development redefining urban living with sustainable design.",
-  },
-  {
-    title: "Green Valley Estate",
-    category: "Construction",
-    image:
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
-    description:
-      "Premium residential community featuring smart homes and landscaped green spaces.",
-  },
-  {
-    title: "Solar Grid Initiative",
-    category: "Energy",
-    image:
-      "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&q=80",
-    description:
-      "50MW solar farm delivering clean power to over 100,000 households.",
-  },
-  {
-    title: "Harvest Fields",
-    category: "Agriculture",
-    image:
-      "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80",
-    description:
-      "Modern agro-processing facility boosting local food security and exports.",
-  },
-];
-
-export const services = [
-  {
-    icon: "building",
-    title: "Real Estate Development",
-    description:
-      "End-to-end property development from land acquisition to handover, with a focus on premium quality and sustainable design.",
-  },
-  {
-    icon: "hammer",
-    title: "Construction & Engineering",
-    description:
-      "Full-spectrum construction services delivering projects on time, within budget, and to the highest safety standards.",
-  },
-  {
-    icon: "energy",
-    title: "Energy Solutions",
-    description:
-      "Renewable energy projects and infrastructure that power communities while protecting our planet for future generations.",
-  },
-  {
-    icon: "leaf",
-    title: "Agro & Rural Development",
-    description:
-      "Innovative farming solutions and rural infrastructure that transform livelihoods and strengthen food systems.",
-  },
-  {
-    icon: "chart",
-    title: "Consulting & Advisory",
-    description:
-      "Strategic guidance for businesses and governments navigating complex markets and ambitious growth targets.",
-  },
-  {
-    icon: "globe",
-    title: "Project Management",
-    description:
-      "Expert oversight ensuring seamless execution across multi-disciplinary projects of any scale.",
+      "Otinaki is built on integrity, accountability, and a relentless pursuit of excellence. We hold every team member to the highest ethical standards, and we expect that commitment to quality and trust to be reflected in every project we deliver and every relationship we build — with clients, partners, and communities alike.",
   },
 ];
 
 export const stats = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 120, suffix: "+", label: "Projects Completed" },
-  { value: 50, suffix: "+", label: "Expert Team Members" },
-  { value: 12, suffix: "", label: "Countries Served" },
+  { value: 5, suffix: "", label: "Sectors" },
+  { value: 120, suffix: "+", label: "Projects Delivered" },
+  { value: 15, suffix: "+", label: "Years of Excellence" },
+  { value: 12, suffix: "", label: "States of Operation" },
+];
+
+export const services = [
+  {
+    slug: "construction",
+    icon: "building",
+    title: "Construction",
+    tagline: "Shaping the Physical Future.",
+    headline: "Civil Engineering, Road, Bridge, Dam & Building Construction",
+    description:
+      "Infrastructure built for longevity — from complex drainage and bridges to architectural landmarks.",
+    body: "Otinaki Construction designs and executes infrastructure projects that form the backbone of growing communities and economies. We specialize in the design and execution of complex civil engineering projects — including buildings, roads, bridges, dams, and large-scale commercial buildings. Every project is delivered with a focus on structural integrity, safety, and timely completion, backed by experienced engineers and modern equipment.",
+    cta: "Request a Construction Consultation",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+  },
+  {
+    slug: "real-estate-hospitality",
+    icon: "landmark",
+    title: "Real Estate & Hospitality",
+    tagline: "Engineered for Living. Managed for Excellence.",
+    headline: "Property Development, Sales & Hotel Management in Nigeria",
+    description:
+      "High-yield property assets and premium hotel management, backed by institutional-grade construction standards.",
+    body: "Otinaki seamlessly blends institutional construction with high-touch lifestyle management. We acquire, develop, and manage premium real estate and hotel properties. Our hospitality division ensures that every physical asset delivers an exceptional human experience and sustained operational value.",
+    cta: "Enquire About Available Properties",
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+  },
+  {
+    slug: "energy",
+    icon: "bolt",
+    title: "Energy",
+    tagline: "Powering Autonomous Infrastructure.",
+    headline: "Solar Power Installation & Electrical Engineering Services",
+    description:
+      "Next-generation solar and electrical engineering for autonomous, future-proof power.",
+    body: "Reliable power is the lifeblood of progress. Otinaki Energy designs and deploys advanced electrical engineering and solar system solutions. We transition communities and commercial enterprises toward grid-independent, sustainable power. Our team delivers energy solutions tailored to each client's needs.",
+    cta: "Get an Energy Assessment",
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+  },
+  {
+    slug: "agriculture",
+    icon: "leaf",
+    title: "Agriculture",
+    tagline: "Cultivating Growth Naturally.",
+    headline: "Precision Agrarian Operations, Livestock & Aquaculture",
+    description:
+      "Driving food security and economic scale through modern agrarian operations, livestock, and aquaculture.",
+    body: "We approach agriculture with industrial scale and scientific rigor. Our operations span expansive agrarian farming, optimized livestock rearing, and high-yield fish farming, combining modern techniques with sound land and resource management to deliver quality produce consistently, contributing to regional food security and highly reliable supply chains.",
+    cta: "Explore Agricultural Partnerships",
+    image: "https://images.unsplash.com/photo-1574943329849-82517e3f79c?w=800&q=80",
+  },
+  {
+    slug: "automobile-mobility",
+    icon: "car",
+    title: "Automobile & Mobility",
+    tagline: "Driving You Forward.",
+    headline: "Unrestricted Global Mobility — Vehicles, Vessels & Aircraft",
+    description:
+      "Bespoke procurement and logistics across land, sea, and air.",
+    body: "Moving people and assets with total efficiency. Our mobility division handles the high-level procurement, buying, and selling of premium cars, marine vessels, and aircraft, ensuring our clients maintain their operational momentum without interruption — with emphasis on quality and value.",
+    cta: "Enquire About Mobility Solutions",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+  },
+];
+
+export const foundation = {
+  slug: "otinaki-foundation",
+  title: "Otinaki Foundation",
+  tagline: "Investing in People. Strengthening Communities.",
+  headline: "The social impact arm of the Otinaki Group",
+};
+
+export const navServices = [
+  ...services.map((s) => ({
+    slug: s.slug,
+    title: s.title,
+    tagline: s.tagline,
+    href: `/${s.slug}`,
+  })),
+  {
+    slug: foundation.slug,
+    title: foundation.title,
+    tagline: foundation.tagline,
+    href: `/${foundation.slug}`,
+  },
+];
+
+export const whyOtinaki = [
+  {
+    title: "Zero-Friction Asset Delivery",
+    subtitle: "End-to-End Project Delivery",
+    body: "We manage the full project lifecycle: we build the infrastructure, power the facilities, and manage the long-term operations — a true turnkey approach from design to delivery.",
+  },
+  {
+    title: "Future-Proof Engineering",
+    subtitle: "Sustainable, Self-Sufficient Infrastructure",
+    body: "We build assets that are self-sustaining, resource-resilient, and structured for long-term operational performance, reducing reliance on unstable power and supply chains.",
+  },
 ];
