@@ -9,10 +9,9 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-2.5">
-              <Logo className="h-8 w-8 text-gold" />
-              <span className="text-xl font-bold text-white">Otinaki</span>
-            </div>
+            <Link href="/" className="inline-block">
+              <Logo className="h-20 w-auto" />
+            </Link>
             <p className="mt-4 text-sm leading-relaxed text-white/55">
               Engineering your unassailable advantage across construction, energy, real estate, agriculture, and mobility.
             </p>
@@ -25,6 +24,7 @@ export function Footer() {
               {[
                 { label: "Home", href: "/" },
                 { label: "About Us", href: "/about" },
+                { label: "Foundation", href: `/${foundation.slug}` },
                 { label: "Contact Us", href: "/contact" },
               ].map((link) => (
                 <Link key={link.href} href={link.href} className="text-sm font-medium text-white/70 hover:text-gold transition-colors">
@@ -43,9 +43,6 @@ export function Footer() {
                   {s.title}
                 </Link>
               ))}
-              <Link href={`/${foundation.slug}`} className="text-sm font-medium text-white/70 hover:text-gold transition-colors">
-                {foundation.title}
-              </Link>
             </div>
           </div>
 

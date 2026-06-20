@@ -2,6 +2,7 @@ export const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/#services" },
+  { label: "Foundation", href: "/otinaki-foundation" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -130,20 +131,12 @@ export const foundation = {
   headline: "The social impact arm of the Otinaki Group",
 };
 
-export const navServices = [
-  ...services.map((s) => ({
-    slug: s.slug,
-    title: s.title,
-    tagline: s.tagline,
-    href: `/${s.slug}`,
-  })),
-  {
-    slug: foundation.slug,
-    title: foundation.title,
-    tagline: foundation.tagline,
-    href: `/${foundation.slug}`,
-  },
-];
+export const navServices = services.map((s) => ({
+  slug: s.slug,
+  title: s.title,
+  tagline: s.tagline,
+  href: `/${s.slug}`,
+}));
 
 export const whyOtinaki = [
   {
