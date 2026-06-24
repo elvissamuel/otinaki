@@ -1,8 +1,9 @@
 export const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
+  { label: "Corporate Information", href: "/about" },
   { label: "Services", href: "/#services" },
   { label: "Foundation", href: "/otinaki-foundation" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -26,7 +27,7 @@ export const heroSlides = [
       "Solar and electrical engineering solutions that transition communities toward grid-independent, sustainable power.",
   },
   {
-    image: "https://images.unsplash.com/photo-1574943329849-82517e3f79c?w=1920&q=80",
+    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&q=80",
     subtitle: "Agriculture & Food Security",
     description:
       "Industrial-scale agrarian operations, livestock rearing, and aquaculture delivering reliable supply chains.",
@@ -108,7 +109,7 @@ export const services = [
       "Driving food security and economic scale through modern agrarian operations, livestock, and aquaculture.",
     body: "We approach agriculture with industrial scale and scientific rigor. Our operations span expansive agrarian farming, optimized livestock rearing, and high-yield fish farming, combining modern techniques with sound land and resource management to deliver quality produce consistently, contributing to regional food security and highly reliable supply chains.",
     cta: "Explore Agricultural Partnerships",
-    image: "https://images.unsplash.com/photo-1574943329849-82517e3f79c?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80",
   },
   {
     slug: "automobile-mobility",

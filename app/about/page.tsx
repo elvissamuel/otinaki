@@ -4,7 +4,7 @@ import { whyOtinaki, stats, aboutAccordion } from "../lib/data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Otinaki",
+  title: "Corporate Information | Otinaki",
   description:
     "Learn about Otinaki — a diversified corporate powerhouse delivering precision and excellence across construction, energy, real estate, agriculture, and mobility in Nigeria.",
 };
@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <PageShell>
       <PageHero
-        label="About Us"
+        label="Corporate Information"
         title="The Otinaki Standard: Mastery in Every Discipline"
         subtitle="What separates Otinaki is our technical pedigree — civil-grade precision applied to every industry we touch."
         image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
@@ -52,7 +52,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section data-header-theme="light" className="bg-cream">
+      {/* <section data-header-theme="light" className="bg-cream">
         <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10">
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             {stats.map((stat) => (
@@ -65,7 +65,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Otinaki */}
       <section data-header-theme="light" className="bg-white">

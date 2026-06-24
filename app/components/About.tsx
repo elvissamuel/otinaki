@@ -67,14 +67,14 @@ export function About() {
         </div>
 
         {/* Stats */}
-        <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        {/* <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="rounded-xl border border-navy/8 bg-white px-5 py-6 text-center">
               <Counter value={stat.value} suffix={stat.suffix} />
               <p className="mt-2 text-xs font-semibold tracking-wide text-navy/60 uppercase">{stat.label}</p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Image + Mission/Vision/Values */}
         <div className="mt-20 grid items-start gap-12 lg:grid-cols-2 lg:gap-16">

@@ -38,10 +38,10 @@ export default function ContactPage() {
                   {
                     icon: "📍",
                     label: "Office",
-                    value: "Victoria Island, Lagos, Nigeria",
+                    value: "Number 15 Ayeyemi Street, Ayobo, Lagos.",
                   },
                   { icon: "✉️", label: "Email", value: "hello@otinaki.com" },
-                  { icon: "📞", label: "Phone", value: "+234 (0) 800 OTINAKI" },
+                  { icon: "📞", label: "Phone", value: "+2349033900675" },
                   { icon: "🕐", label: "Office Hours", value: "Monday – Friday, 8am – 6pm WAT" },
                 ].map((item) => (
                   <div key={item.label} className="flex gap-4">

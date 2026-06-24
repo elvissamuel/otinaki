@@ -23,8 +23,9 @@ export function Footer() {
             <div className="flex flex-col gap-2.5">
               {[
                 { label: "Home", href: "/" },
-                { label: "About Us", href: "/about" },
+                { label: "Corporate Information", href: "/about" },
                 { label: "Foundation", href: `/${foundation.slug}` },
+                { label: "Blog", href: "/blog" },
                 { label: "Contact Us", href: "/contact" },
               ].map((link) => (
                 <Link key={link.href} href={link.href} className="text-sm font-medium text-white/70 hover:text-gold transition-colors">
@@ -51,8 +52,8 @@ export function Footer() {
             <p className="mb-4 text-xs font-semibold tracking-wider text-white/40 uppercase">Get in Touch</p>
             <div className="flex flex-col gap-3">
               <p className="text-sm text-white/70">hello@otinaki.com</p>
-              <p className="text-sm text-white/70">+234 (0) 800 OTINAKI</p>
-              <p className="text-sm text-white/70">Victoria Island, Lagos</p>
+              <p className="text-sm text-white/70">+2349033900675</p>
+              <p className="text-sm text-white/70">Number 15 Ayeyemi Street, Ayobo, Lagos.</p>
             </div>
             <Link
               href="/contact"

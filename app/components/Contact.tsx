@@ -28,9 +28,9 @@ export function Contact() {
 
             <div className="mt-10 space-y-6">
               {[
-                { label: "Office", value: "Victoria Island, Lagos, Nigeria" },
+                { label: "Office", value: "Number 15 Ayeyemi Street, Ayobo, Lagos." },
                 { label: "Email", value: "hello@otinaki.com" },
-                { label: "Phone", value: "+234 (0) 800 OTINAKI" },
+                { label: "Phone", value: "+2349033900675" },
               ].map((item) => (
                 <div key={item.label}>
                   <p className="text-xs font-semibold tracking-wide text-white/50 uppercase">{item.label}</p>

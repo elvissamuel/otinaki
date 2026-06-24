@@ -15,7 +15,7 @@ export default function AgriculturePage() {
       headline="Precision Agrarian Operations, Livestock & Aquaculture"
       body="We approach agriculture with industrial scale and scientific rigor. Our operations span expansive agrarian farming, optimized livestock rearing, and high-yield fish farming, combining modern techniques with sound land and resource management to deliver quality produce consistently. We contribute to regional food security and build highly reliable supply chains that serve both domestic and export markets."
       cta="Explore Agricultural Partnerships"
-      image="https://images.unsplash.com/photo-1574943329849-82517e3f79c?w=1920&q=80"
+      image="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&q=80"
       highlights={[
         {
           title: "Agrarian Farming",

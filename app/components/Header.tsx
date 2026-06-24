@@ -25,6 +25,7 @@ export function Header() {
 
   const isServicePage = navServices.some((s) => isLinkActive(pathname, s.href));
   const isFoundationPage = isLinkActive(pathname, foundationHref);
+  const isBlogPage = isLinkActive(pathname, "/blog");
 
   useEffect(() => {
     const update = () => {
@@ -93,10 +94,10 @@ export function Header() {
       >
         <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 lg:px-10">
           <Link href="/" className="flex items-center">
-            <Logo className="h-20 w-auto" />
+            <Logo className="h-24 w-auto" />
           </Link>
 
-          {/* Desktop nav: Home · About · Services ▾ · Foundation · Contact */}
+          {/* Desktop nav: Home · About · Services ▾ · Foundation · Blog · Contact */}
           <nav className="hidden items-center gap-1 lg:flex">
             <Link
               href="/"
@@ -111,7 +112,7 @@ export function Header() {
               aria-current={isLinkActive(pathname, "/about") ? "page" : undefined}
               className={`rounded-lg px-3.5 py-2 text-sm font-medium transition-colors ${navLinkClass(isLinkActive(pathname, "/about"))}`}
             >
-              About Us
+              Corporate Info
             </Link>
 
             {/* Services dropdown — 5 sectors only */}
@@ -171,6 +172,14 @@ export function Header() {
               className={`rounded-lg px-3.5 py-2 text-sm font-medium transition-colors ${navLinkClass(isFoundationPage)}`}
             >
               Foundation
+            </Link>
+
+            <Link
+              href="/blog"
+              aria-current={isBlogPage ? "page" : undefined}
+              className={`rounded-lg px-3.5 py-2 text-sm font-medium transition-colors ${navLinkClass(isBlogPage)}`}
+            >
+              Blog
             </Link>
 
             <Link
@@ -234,7 +243,7 @@ export function Header() {
                 aria-current={isLinkActive(pathname, "/about") ? "page" : undefined}
                 className={mobileLinkClass(isLinkActive(pathname, "/about"))}
               >
-                About Us
+                Corporate Info
               </Link>
 
               {/* Services accordion */}
@@ -282,6 +291,15 @@ export function Header() {
                 className={mobileLinkClass(isFoundationPage)}
               >
                 Foundation
+              </Link>
+
+              <Link
+                href="/blog"
+                onClick={() => setMenuOpen(false)}
+                aria-current={isBlogPage ? "page" : undefined}
+                className={mobileLinkClass(isBlogPage)}
+              >
+                Blog
               </Link>
 
               <Link
